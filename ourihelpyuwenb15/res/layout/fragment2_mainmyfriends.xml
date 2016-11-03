@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/information"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#5A436E"
+            android:text="我的好友"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backtofriend"
+            android:onClick="return1"
+             />
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add"
+            android:onClick="join" />
+
+    </RelativeLayout>
+
+    <!-- <ImageButton
+        android:id="@+id/freshButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/refresh"
+        android:onClick="fresh"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" /> -->
+
+    <ListView
+        android:id="@+id/lv_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

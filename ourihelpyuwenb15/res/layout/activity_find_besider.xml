@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindBesiderActivity" >
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#5A436E"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="8dp"
+        android:textSize="18sp" />
+	<Button 
+	    android:id="@+id/btUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:onClick="update"
+        android:gravity="center"
+        android:text="刷新" />
+	    />
+    <ListView 
+        android:id="@+id/lvBesideUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+</LinearLayout>

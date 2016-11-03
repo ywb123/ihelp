@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners"
+    android:alpha="0.8"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/textName"
+        android:textColor="#DEB887"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawablePadding="3dp"
+    	android:singleLine="true"
+    	
+        />
+    <TextView 
+        android:id="@+id/textBean"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        />
+    <TextView 
+        android:id="@+id/textEmail"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        />
+    <TextView 
+        android:id="@+id/textIAuto"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        />
+    
+    
+    
+
+</LinearLayout>

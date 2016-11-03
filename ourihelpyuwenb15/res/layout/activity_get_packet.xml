@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#5A436E"
+    android:id="@+id/llmain" >
+    
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFFF0"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="100dp"
+        android:layout_gravity="right"
+        android:scrollbars="vertical"
+        android:popupBackground="#CC99FF"
+        android:prompt="@string/prompt"
+        android:entries="@array/act"
+        android:textSize="24dp" 
+        />
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:clickable="true"
+        
+         />
+
+    
+    
+</LinearLayout>
+</ScrollView>

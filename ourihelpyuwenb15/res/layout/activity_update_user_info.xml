@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"  
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/information" >
+
+        <Button
+            android:id="@+id/information"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#5A436E"
+            android:text="编辑资料"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/ib_no"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/no"
+            android:onClick="back" />
+
+        <ImageButton
+            android:id="@+id/ib_yes"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yes"
+            android:onClick="submit" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/r1"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="15dp"
+        android:background="#FFEFDB">
+        
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="19dp"
+            android:editable="false"
+            android:ems="10"
+            android:textColor="#00CCFF"
+            android:textSize="20sp" >
+        
+            
+        </EditText>
+        
+        <EditText
+            android:id="@+id/et_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_name"
+            android:layout_below="@+id/et_name"
+            android:textColor="#000000"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_gender"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="15dp"
+            android:text="用户名"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_gender"
+            android:layout_alignParentLeft="true"
+            android:text="性别"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/r2"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="15dp"
+        android:background="#FFEFDB">
+        <EditText
+            android:id="@+id/et_majorclass"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="19dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:textSize="18sp" >
+        
+            
+        </EditText>
+        
+        <EditText
+            android:id="@+id/et_dormitorynumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_majorclass"
+            android:layout_below="@+id/et_majorclass"
+            android:ems="10"
+            android:textSize="18sp" 
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_majorclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_dormitorynumber"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="15dp"
+            android:text="专业班级"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_dormitorynumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_dormitorynumber"
+            android:layout_alignParentLeft="true"
+            android:text="宿舍号"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/r3"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="15dp"
+        android:background="#FFEFDB">
+        <EditText
+            android:id="@+id/et_birthday"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="19dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:textSize="18sp" >
+        
+            
+        </EditText>
+        
+        <EditText
+            android:id="@+id/et_autograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_birthday"
+            android:layout_below="@+id/et_birthday"
+            android:ems="10"
+            android:textSize="18sp" 
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_autograph"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="15dp"
+            android:text="生日"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_autograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_autograph"
+            android:layout_alignParentLeft="true"
+            android:text="i签名"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/information"
+        android:background="@drawable/bg1" >
+
+        <ImageView
+            android:id="@+id/img_selecttoux"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mini_avatar_shadow" 
+            android:onClick="selecttoux"/>
+    </RelativeLayout>
+
+</RelativeLayout>

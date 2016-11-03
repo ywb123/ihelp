@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/information"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#5A436E"
+            android:text="我要投稿"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/Back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backtofriend"
+            android:onClick="back" />
+
+        <ImageView
+            android:id="@+id/Yes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/publish"
+            android:onClick="submit" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etKeyword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="关键字：取快递、带外卖、、、"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="你想说什么呢。。。。。。"
+         android:textSize="20sp" />
+     <Button
+        android:id="@+id/keycut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="keycut"
+        android:text="提取关键字" />
+    
+    <TextView
+      android:id="@+id/keywordshow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="关键信息是："
+      android:textSize="25sp" />
+
+</LinearLayout>

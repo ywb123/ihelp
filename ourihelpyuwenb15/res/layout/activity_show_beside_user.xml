@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindBesiderActivity" >
+
+    <TextView
+        android:id="@+id/tvLoc"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#5A436E"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="8dp"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp" >
+
+        <TextView
+            android:id="@+id/tv_addfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/bt_addfriends"
+            android:text="离我最近"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/bt_addfriends"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:onClick="sortbydistance"
+            android:src="@drawable/liwozuijin" />
+
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="54dp" >
+
+         <TextView
+             android:id="@+id/tv_goldbean"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="22dp"
+             android:layout_toRightOf="@+id/bt_addfriends"
+             android:text="金豆最多"
+             android:textSize="20dp" />
+
+         <ImageView
+             android:id="@+id/bt_addfriends"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_alignBottom="@+id/tv_goldbean"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="25dp"
+             android:onClick="sortbygoldbeannumber"
+             android:src="@drawable/jindouzuiduo" />
+
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="54dp" >
+
+         <ImageView
+             android:id="@+id/bt_addfriends"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="25dp"
+             android:onClick="sortbyfriend"
+             android:src="@drawable/wozuishuxi1" />
+
+         <TextView
+             android:id="@+id/tv_recommend"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="22dp"
+             android:layout_toRightOf="@+id/bt_addfriends"
+             android:text="我最熟悉"
+             android:textSize="20dp" />
+
+     </RelativeLayout>
+
+	    />
+    <ListView 
+        android:id="@+id/lvBeside"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5px" 
+        android:padding="10dp"
+        ></ListView>
+</LinearLayout>

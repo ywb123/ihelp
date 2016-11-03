@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/slide/testslide1/Fragment4_mainmytreecave.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/slide/testslide1/Fragment4_mainmytreecave.java" />
+        <ignore path="src/com/slide/testslide1/GetPacketActivity.java" />
+        <ignore path="src/com/slide/testslide1/Treecave_AttributeActivity.java" />
+    </issue>
+</lint>

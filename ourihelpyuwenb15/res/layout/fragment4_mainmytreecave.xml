@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:src="@drawable/treecavemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/information"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#5A436E"
+            android:text="我的树洞"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/flash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/refresh"
+            android:onClick="flash" />
+
+        <Button
+            android:id="@+id/attribute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/write"
+            android:onClick="attribute" />
+
+    </RelativeLayout>
+    
+    	<ListView
+    	    android:id="@+id/LV_Message"
+    	    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="5dp"
+            android:layout_marginBottom="50dp"
+            ></ListView>
+</LinearLayout>
